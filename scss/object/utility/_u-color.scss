@@ -1,0 +1,7 @@
+@use "../../import" as var;
+
+.u-color {
+  &--key {
+    color: var(--color_key);
+  }
+}
