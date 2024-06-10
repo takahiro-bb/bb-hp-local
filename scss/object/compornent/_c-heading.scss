@@ -4,12 +4,63 @@
   &--main {
     font-size: var.fs(22, 26);
     font-weight: 700;
+    line-height: 1.26;
     color: var(--color-main);
   }
 
-  &-fs--17_bold {
+  &-shop-name {
+    margin-bottom: 8px;
+    font-size: var.fs(17, 22);
+    font-weight: 600;
+
+    @include var.mq(max, sp) {
+      margin-bottom: 5px;
+      font-weight: 700;
+    }
+  }
+
+  &-decoration {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 28px;
+    font-size: var.fs(20, 22);
+    font-weight: 600;
+
+    &::before {
+      display: block;
+      width: 8.35px;
+      height: 22px;
+      content: "";
+      background: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%229%22%20height%3D%2223%22%20fill%3D%22none%22%3E%3Cg%20fill%3D%22%2383D19E%22%20clip-path%3D%22url(%23a)%22%3E%3Cpath%20d%3D%22M6.82%203.56a1.53%201.53%200%201%200%200-3.06%201.53%201.53%200%200%200%200%203.06ZM6.82%208.298a1.53%201.53%200%201%200%200-3.06%201.53%201.53%200%200%200%200%203.06ZM6.82%2013.025a1.53%201.53%200%201%200%200-3.061%201.53%201.53%200%200%200%200%203.06ZM6.82%2017.762a1.53%201.53%200%201%200%200-3.06%201.53%201.53%200%200%200%200%203.06ZM6.82%2022.489a1.53%201.53%200%201%200%200-3.061%201.53%201.53%200%200%200%200%203.06ZM1.53%203.56a1.53%201.53%200%201%200%200-3.06%201.53%201.53%200%200%200%200%203.06ZM1.53%208.298a1.53%201.53%200%201%200%200-3.06%201.53%201.53%200%200%200%200%203.06ZM1.53%2013.025a1.53%201.53%200%201%200%200-3.061%201.53%201.53%200%200%200%200%203.06ZM1.53%2017.762a1.53%201.53%200%201%200%200-3.06%201.53%201.53%200%200%200%200%203.06ZM1.53%2022.489a1.53%201.53%200%201%200%200-3.061%201.53%201.53%200%200%200%200%203.06Z%22%2F%3E%3C%2Fg%3E%3Cdefs%3E%3CclipPath%20id%3D%22a%22%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M0%20.5h8.35v22H0z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3C%2Fsvg%3E') no-repeat center center / contain;
+    }
+
+    @include var.mq(max, sp) {
+      font-weight: 700;
+    }
+  }
+
+  &-fs--14_15-bold {
+    margin-bottom: 5px;
+    font-size: var.fs(14, 15);
+    font-weight: 700;
+  }
+
+  &-fs--17-bold {
     margin-bottom: 4px;
     font-size: 17px;
     font-weight: 700;
   }
+
+  &-fs--17_19-bold {
+    margin-bottom: 5px;
+    font-size: var.fs(17, 19);
+    font-weight: 600;
+    line-height: 1.4;
+
+    @include var.mq(max, sp) {
+      font-weight: 700;
+    }
+  }
+
 }
