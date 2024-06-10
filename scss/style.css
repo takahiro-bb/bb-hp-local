@@ -87,6 +87,7 @@
   padding-bottom: 12px;
   display: flex;
   align-items: center;
+  gap: 8px;
 }
 .p-temp2column__title-good::before, .p-temp2column__title-bulb::before {
   content: "";
