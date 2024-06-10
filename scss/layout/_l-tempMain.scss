@@ -6,19 +6,20 @@
   grid-template-columns: 1fr 550px 1fr;
 
   &__con {
-    &-l {
+    &--l {
       position: relative;
       background-color: var(--color_main);
     }
 
-    &-m {
+    &--m {
       position: relative;
       z-index: 100;
       width: 100%;
       max-width: 550px;
+      filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.4));
     }
 
-    &-r {
+    &--r {
       position: relative;
     }
   }
