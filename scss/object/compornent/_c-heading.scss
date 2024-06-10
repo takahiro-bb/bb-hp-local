@@ -1,0 +1,15 @@
+@use "../../import" as var;
+
+.c-heading {
+  &--main {
+    font-size: var.fs(22, 26);
+    font-weight: 700;
+    color: var(--color-main);
+  }
+
+  &-fs--17_bold {
+    margin-bottom: 4px;
+    font-size: 17px;
+    font-weight: 700;
+  }
+}
