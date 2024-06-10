@@ -2,10 +2,11 @@
 
 .c-heading {
   &--main {
+    margin-bottom: 10px;
     font-size: var.fs(22, 26);
     font-weight: 700;
     line-height: 1.26;
-    color: var(--color-main);
+    color: var(--color_main);
   }
 
   &-shop-name {
@@ -47,7 +48,7 @@
   }
 
   &-fs--17-bold {
-    margin-bottom: 4px;
+    margin-bottom: 10px;
     font-size: 17px;
     font-weight: 700;
   }
