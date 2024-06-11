@@ -1,0 +1,12 @@
+@use "../../import" as var;
+
+.c-btnBox {
+  display: flex;
+  justify-content: space-evenly;
+  background: var(--color_main);
+  padding:17px 0;
+
+  &__2{
+    width: 40%;
+  }
+}

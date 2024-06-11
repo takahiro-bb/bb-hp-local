@@ -1,0 +1,23 @@
+@use "../../import" as var;
+
+.c-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color_gray_1);
+  color: #fff;
+  padding: 10px 0;
+  border-radius: 100px;
+  cursor: pointer;
+
+  &__fav {
+    &::before {
+      content: "★";
+      color: #fff;
+    }
+
+    &.js-keep::before {
+      color: var(--color_gray_2);
+    }
+  }
+}
