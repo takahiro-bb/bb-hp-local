@@ -1,0 +1,27 @@
+@use "../../import" as var;
+
+.c-balloon {
+  position: relative;
+  padding: 32px;
+  margin-block: 24px;
+  background-color: var(--color_balloon);
+  border-radius: 20px;
+
+  &::before {
+    position:absolute;
+    bottom: 100%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -10px;
+    content: "";
+    pointer-events:none;
+    border: solid transparent;
+    border-color: transparent;
+    border-top-width: 10px;
+    border-bottom-width: 10px;
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-bottom-color:var(--color_balloon);
+  }
+}

@@ -1,0 +1,12 @@
+@use "../../import" as var;
+
+.u-list {
+  li {
+    line-height: 1.867;
+  }
+
+  &--disc {
+    padding-left: 32px;
+    list-style: disc;
+  }
+}

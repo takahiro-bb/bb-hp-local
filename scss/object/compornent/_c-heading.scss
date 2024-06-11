@@ -41,6 +41,21 @@
     }
   }
 
+  &-check-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+
+    &::before {
+      display: block;
+      width: 22px;
+      height: 19.5px;
+      content: "";
+      background: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2222%22%20height%3D%2220%22%20fill%3D%22none%22%3E%3Cpath%20stroke%3D%22%2383D19E%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%223%22%20d%3D%22M14.97%202.535H2.74c-.68%200-1.24.55-1.24%201.24v13.28c0%20.68.55%201.24%201.24%201.24h13.28c.68%200%201.24-.55%201.24-1.24v-6.12%22%2F%3E%3Cpath%20stroke%3D%22%2383D19E%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%223%22%20d%3D%22m4.65%209.875%205.57%203.1%2010.27-11.26%22%2F%3E%3C%2Fsvg%3E') no-repeat center center / contain;
+    }
+  }
+
   &-fs--14_15-bold {
     margin-bottom: 5px;
     font-size: var.fs(14, 15);
