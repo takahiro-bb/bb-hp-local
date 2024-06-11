@@ -1,0 +1,39 @@
+@use "../../import" as var;
+
+.u-fs {
+  &--13 {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  &--14 {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+
+  &--15 {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+  
+  &--17 {
+    font-size: 17px;
+  }
+
+  &--20 {
+    font-size: 20px;
+  }
+
+  &--24 {
+    font-size: 24px;
+  }
+
+  &--32 {
+    font-size: 32px;
+  }
+
+  &--42 {
+    font-size: 42px;
+  }
+}
