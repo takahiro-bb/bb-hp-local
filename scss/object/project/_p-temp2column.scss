@@ -8,6 +8,8 @@
 
     &-good,
     &-bulb {
+      font-size: var.fs(15, 19);
+      font-weight: bold;
       border-bottom: 1px dashed var(--color_gray_2);
       padding-bottom: 12px;
       display: flex;

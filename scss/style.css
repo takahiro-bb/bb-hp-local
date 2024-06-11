@@ -169,6 +169,8 @@
   padding: 15px;
 }
 .p-temp2column__title-good, .p-temp2column__title-bulb {
+  font-size: clamp(15px, 2.5vw, 19px);
+  font-weight: bold;
   border-bottom: 1px dashed var(--color_gray_2);
   padding-bottom: 12px;
   display: flex;
