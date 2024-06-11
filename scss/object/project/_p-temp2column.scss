@@ -28,6 +28,11 @@
         background-size:100%;
         background-position: center;
         background-repeat: no-repeat;
+
+        @include var.mq(max, sp) {
+          width: 35px;
+        height: 35px;
+      }
       }
     }
 
