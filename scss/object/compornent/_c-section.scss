@@ -1,6 +1,8 @@
 @use "../../import" as var;
 
 .c-section {
+  padding-inline: 20px;
+  
   &__heading {
     font-size: var.fs(20, 22);
     font-weight: 600;
@@ -22,7 +24,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 16px;
+      gap: 8px;
       margin: 0 auto 72px auto;
 
       @include var.mq(max, sp) {

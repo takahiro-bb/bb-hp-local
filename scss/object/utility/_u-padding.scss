@@ -1,0 +1,13 @@
+@use "../../import" as var;
+
+.u-p {
+  &x--{
+    &40 {
+      padding-inline: 40px;
+    }
+
+    &56 {
+      padding-inline: 56px;
+    }
+  }
+}

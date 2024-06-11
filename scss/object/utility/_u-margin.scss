@@ -1,0 +1,17 @@
+@use "../../import" as var;
+
+.u-m {
+  &b--{
+    &16 {
+      margin-bottom: 16px;
+    }
+
+    &18 {
+      margin-bottom: 18px;
+    }
+
+    &40 {
+      margin-bottom: 40px;
+    }
+  }
+}

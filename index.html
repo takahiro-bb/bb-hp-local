@@ -8,6 +8,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="scss/style.css">
   <link rel="stylesheet" type="text/css" href="reset.css">
+
+  <!-- slick slider -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
 </head>
 
 <body>
@@ -275,9 +279,158 @@
 
       </section>
       <!-- アピールポイントパーツ終わり-->
+      <!-- 職場の雰囲気（見出しのみ） -->
+      <section class="c-section__heading-box">
+        <h2 class="c-section__heading">職場の雰囲気</h2>
+        <p class="c-section__heading--en">atmosphere</p>
+      </section>
+
+      <!-- 写真リスト -->
+      <div class="c-section">
+        <ul class="p-photoList">
+          <li class="p-photoList__item">
+            <img class="p-photoList__image" src="https://picsum.photos/id/3/300">
+          </li>
+          <li class="p-photoList__item">
+            <img class="p-photoList__image" src="https://picsum.photos/id/7/300">
+          </li>
+          <li class="p-photoList__item">
+            <img class="p-photoList__image" src="https://picsum.photos/id/11/300">
+          </li>
+          <li class="p-photoList__item">
+            <img class="p-photoList__image" src="https://picsum.photos/id/13/300">
+          </li>
+          <li class="p-photoList__item">
+            <img class="p-photoList__image" src="https://picsum.photos/id/17/300">
+          </li>
+          <li class="p-photoList__item">
+            <img class="p-photoList__image" src="https://picsum.photos/id/19/300">
+          </li>
+        </ul>
+      </div>
+
+      <!-- こんな人が向いています -->
+      <div class="c-section">
+        <div class="p-temp2column">
+          <h3 class="p-temp2column__title-good">
+            こんな人が向いています
+          </h3>
+
+          <p class="p-temp2column__box c-section__read">
+          <ul class="u-list u-list--disc">
+            <li>がんばる人</li>
+            <li>人と接すのが好きな人</li>
+            <li>好奇心旺盛な人</li>
+            <li>コーヒーが好きな人</li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+      <!-- メンバー -->
+      <div class="p-memeber">
+        <section class="c-section__heading-box">
+          <h2 class="c-section__heading">メンバー</h2>
+          <p class="c-section__heading--en">MEMBER</p>
+        </section>
+
+        <div class="p-memberSlider js-member-slider">
+          <div class="p-memberSlider__item">
+            <div class="p-memberSlider__thumb">
+              <img src="https://picsum.photos/id/23/300">
+            </div>
+            <h3 class="c-heading-fs--17-bold u-ta--center">田中太郎</h3>
+            <p class="u-mb--16 u-fs--13 u-ta--center">店長・ホール担当</p>
+            <div class="u-px--40">
+              <p class="c-section__read">
+                実家が旅館を経営しており、幼い頃から厨房ではたらく人の姿を見ていました。食事を提供する仕事をしたいと思い、いまカフェの店長をやっています。趣味はスポーツ観戦です。
+              </p>
+              <div class="c-balloon">
+                <h3 class="c-heading-fs--17_19-bold u-mb--18 u-color--key">interview</h3>
+                <section class="u-mb--18">
+                  <h4 class="c-heading-fs--14_15-bold">メッセージ</h4>
+                  <p class="c-section__read">シフトをつくったり、ホールにでて接客をしています。</p>
+                </section>
+                <section class="u-mb--18">
+                  <h4 class="c-heading-fs--14_15-bold">仕事の魅力</h4>
+                  <p class="c-section__read">ハンドドリップで淹れたコーヒーを、美味しいといってもらえるときにやりがいを感じます。</p>
+                </section>
+                <section class="u-mb--18">
+                  <h4 class="c-heading-fs--14_15-bold">仕事内容</h4>
+                  <p class="c-section__read">本格的なコーヒーを淹れられるエスプレッソマシンを使えること。</p>
+                </section>
+                <section class="u-mb--18">
+                  <h4 class="c-heading-fs--14_15-bold">やりがい</h4>
+                  <p class="c-section__read">ぜひ一緒に働きましょう！元気で思いやりのある方をまっています。</p>
+                </section>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-memberSlider__item">
+            <div class="p-memberSlider__thumb">
+              <img src="https://picsum.photos/id/29/300">
+            </div>
+            <h3 class="c-heading-fs--17-bold u-ta--center">山田次郎</h3>
+            <p class="u-mb--16 u-fs--13 u-ta--center">キッチン担当</p>
+            <div class="u-px--40">
+              <p class="c-section__read">
+                実家が旅館を経営しており、幼い頃から厨房ではたらく人の姿を見ていました。食事を提供する仕事をしたいと思い、いまカフェの店長をやっています。趣味はスポーツ観戦です。
+              </p>
+              <div class="c-balloon">
+                <h3 class="c-heading-fs--17_19-bold u-mb--18 u-color--key">interview</h3>
+                <section class="u-mb--18">
+                  <h4 class="c-heading-fs--14_15-bold">メッセージ</h4>
+                  <p class="c-section__read">シフトをつくったり、ホールにでて接客をしています。</p>
+                </section>
+                <section class="u-mb--18">
+                  <h4 class="c-heading-fs--14_15-bold">仕事の魅力</h4>
+                  <p class="c-section__read">ハンドドリップで淹れたコーヒーを、美味しいといってもらえるときにやりがいを感じます。</p>
+                </section>
+                <section class="u-mb--18">
+                  <h4 class="c-heading-fs--14_15-bold">仕事内容</h4>
+                  <p class="c-section__read">本格的なコーヒーを淹れられるエスプレッソマシンを使えること。</p>
+                </section>
+                <section class="u-mb--18">
+                  <h4 class="c-heading-fs--14_15-bold">やりがい</h4>
+                  <p class="c-section__read">ぜひ一緒に働きましょう！元気で思いやりのある方をまっています。</p>
+                </section>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- / メンバー -->
+
+      <!-- 働きやすさ -->
+      <div class="u-px--56">
+        <section class="c-section__heading-box">
+          <h2 class="c-section__heading">働きやすさ</h2>
+          <p class="c-section__heading--en">easy to work</p>
+        </section>
+
+        <section class="u-mb--40">
+          <h3 class="c-heading-check-icon">ノー残業デー</h3>
+          <p class="c-section__read">毎週水曜日はノー残業デーにしています。<br>18時で帰宅します</p>
+        </section>
+        <section class="u-mb--40">
+          <h3 class="c-heading-check-icon">研修制度</h3>
+          <p class="c-section__read">新人研修 / スキルアップ研修 / 管理職研修 / E-learning<br>など各種研修を用意し、スキルアップの環境を整えています。</p>
+        </section>
+        <section class="u-mb--40">
+          <h3 class="c-heading-check-icon">福利厚生</h3>
+          <p class="c-section__read">コーヒー無料、クラブ活動などさまざまな福利厚生を用意しています。</p>
+        </section>
+
+        <div class="c-balloon">
+
+        </div>
+      </div>
+      <!-- / 働きやすさ -->
 
     </div>
-    <!-- メインコンテンツ　終わり-->
+    <!-- メインコンテンツ　終わり--> <!-- /l-tempMain__con--m -->
 
     <div class="l-tempMain__con--r">
       <div class="l-tempMain__bg l-tempMain__wrap">
@@ -286,6 +439,16 @@
     </div>
   </main>
 
+  <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+  <!-- slickのJavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script>
+    $('.js-member-slider').slick({
+      dots: true,
+    });
+  </script>
 </body>
 
 </html>
