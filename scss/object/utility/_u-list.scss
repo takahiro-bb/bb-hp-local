@@ -9,4 +9,22 @@
     padding-left: 32px;
     list-style: disc;
   }
+
+  &--work-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: calc(50% - 10px);
+      aspect-ratio: 1/1;
+      background-color: #fff;
+      border-radius: 100px;
+    }
+  }
 }

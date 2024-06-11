@@ -1,0 +1,9 @@
+@use "../../import" as var;
+
+.u-bg {
+  &-color {
+    &--gray {
+      background-color: var(--color_bg)
+    }
+  }
+}

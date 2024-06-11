@@ -1,0 +1,10 @@
+@use "../../import" as var;
+
+.c-infoList {
+  padding: 20px;
+  border-bottom: 1px dashed var(--color_gray_2);
+
+  &:nth-child(2) {
+    border-top: 1px dashed var(--color_gray_2);
+  }
+}

@@ -2,6 +2,10 @@
 
 .u-m {
   &b--{
+    &14 {
+      margin-bottom: 14px;
+    }
+
     &16 {
       margin-bottom: 16px;
     }
@@ -10,8 +14,18 @@
       margin-bottom: 18px;
     }
 
+    &24 {
+      margin-bottom: 24px;
+    }
+
     &40 {
       margin-bottom: 40px;
+    }
+  }
+
+  &l--{
+    &m8 {
+      margin-left: -8px;
     }
   }
 }
