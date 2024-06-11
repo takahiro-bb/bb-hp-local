@@ -134,6 +134,64 @@
   line-height: 1.6;
 }
 
+.c-taglist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.c-taglist li {
+  font-size: 13px;
+  padding: 3px 10px;
+  border: 1px solid #333;
+  border-radius: 100px;
+}
+
+.c-jobcard {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.c-jobcard__box {
+  border: 1px solid var(--color_gray_2);
+}
+.c-jobcard__wrap {
+  text-align: left;
+  padding: 15px;
+}
+.c-jobcard__heading {
+  display: flex;
+  background: var(--color_key);
+  padding: 8px 12px;
+  align-items: center;
+}
+.c-jobcard__heading-area {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: normal;
+  background: #fff;
+  padding: 5px 12px;
+  border-radius: 100px;
+}
+.c-jobcard__heading-name {
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 12px;
+}
+.c-jobcard__title {
+  font-weight: bold;
+  line-height: 21px !important;
+  margin-bottom: 8px;
+}
+.c-jobcard__more {
+  display: block;
+  font-size: 15px;
+  text-align: right;
+  color: var(--color_link);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .p-tempMenu {
   padding: 80px 0 0 224px;
 }
@@ -167,6 +225,7 @@
 .p-temp2column {
   border: 1px solid var(--color_gray_2);
   padding: 15px;
+  background: #fff;
 }
 .p-temp2column__title-good, .p-temp2column__title-bulb {
   font-size: clamp(15px, 2.5vw, 19px);
@@ -190,6 +249,12 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+@media screen and (max-width: 600px) {
+  .p-temp2column__title-good::before, .p-temp2column__title-bulb::before {
+    width: 35px;
+    height: 35px;
+  }
+}
 .p-temp2column__title-good::before {
   background-image: url(/img/icon_good.svg);
 }
@@ -197,7 +262,7 @@
   background-image: url(/img/icon_bulb.svg);
 }
 .p-temp2column__box {
-  padding: 15px 0;
+  padding: 15px 0 0;
 }
 
 .p-tempAbout__img {
@@ -209,6 +274,79 @@
 }
 .p-tempAbout__title {
   padding: 0 24px 24px 24px;
+}
+
+.p-tempWorks__con {
+  display: flex;
+  flex-direction: column;
+}
+.p-tempWorks__box {
+  display: flex;
+  gap: 17px;
+  margin: 0 0 35px 0;
+}
+@media screen and (max-width: 600px) {
+  .p-tempWorks__box {
+    flex-direction: column;
+  }
+}
+.p-tempWorks__img img {
+  width: 200px;
+  height: 140px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 600px) {
+  .p-tempWorks__img img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.p-tempPR {
+  background: var(--color_bg);
+  counter-reset: number 0;
+}
+.p-tempPR__box {
+  margin: 0 0 35px 0;
+}
+.p-tempPR__title {
+  position: relative;
+  font-size: clamp(15px, 2.5vw, 19px);
+  font-weight: bold;
+  padding-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.p-tempPR__title::before {
+  content: "POINT";
+  padding: 12px;
+  color: #fff;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  width: 65px;
+  height: 65px;
+  border-radius: 100%;
+  background: var(--color_key);
+  background-size: 100%;
+}
+.p-tempPR__title::after {
+  position: absolute;
+  content: "" counter(number);
+  counter-increment: number 1;
+  color: #fff;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  width: 65px;
+  height: 65px;
+  left: 0;
+  bottom: -15px;
+}
+.p-tempPR__text {
+  padding: 10px 15px;
 }
 
 .u-color--key {
