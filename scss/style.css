@@ -248,9 +248,32 @@
 .c-btn__fav::before {
   content: "★";
   color: #fff;
+  margin-right: 5px;
 }
-.c-btn__fav.js-keep::before {
+.c-btn__fav.js-clip::before {
   color: var(--color_gray_2);
+}
+.c-btn__keep::before {
+  content: "★";
+  color: #fff;
+  margin-right: 5px;
+}
+.c-btn__keep.js-clip::before {
+  color: var(--color_gray_2);
+}
+.c-btn__form::before {
+  content: "";
+  background-image: url("../img/icon_form.svg");
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+.c-btn__tel::before {
+  content: "";
+  background-image: url("../img/icon_tel.svg");
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
 }
 
 .c-btnBox {
@@ -261,6 +284,9 @@
 }
 .c-btnBox__2 {
   width: 40%;
+}
+.c-btnBox__3 {
+  width: 30%;
 }
 
 .p-memberSlider .slick-dots {

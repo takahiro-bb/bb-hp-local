@@ -4,9 +4,13 @@
   display: flex;
   justify-content: space-evenly;
   background: var(--color_main);
-  padding:17px 0;
+  padding: 17px 0;
 
-  &__2{
+  &__2 {
     width: 40%;
+  }
+
+  &__3 {
+    width: 30%;
   }
 }

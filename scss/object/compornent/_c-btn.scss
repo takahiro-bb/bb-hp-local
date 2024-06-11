@@ -14,10 +14,43 @@
     &::before {
       content: "★";
       color: #fff;
+      margin-right: 5px;
     }
 
-    &.js-keep::before {
+    &.js-clip::before {
       color: var(--color_gray_2);
+    }
+  }
+
+  &__keep {
+    &::before {
+      content: "★";
+      color: #fff;
+      margin-right: 5px;
+    }
+
+    &.js-clip::before {
+      color: var(--color_gray_2);
+    }
+  }
+
+  &__form {
+    &::before {
+      content: "";
+      background-image:url("../img/icon_form.svg");
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+    }
+  }
+
+  &__tel {
+    &::before {
+      content: "";
+      background-image:url("../img/icon_tel.svg");
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
     }
   }
 }
