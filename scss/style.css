@@ -146,6 +146,52 @@
   border-radius: 100px;
 }
 
+.c-jobcard {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.c-jobcard__box {
+  border: 1px solid var(--color_gray_2);
+}
+.c-jobcard__wrap {
+  text-align: left;
+  padding: 15px;
+}
+.c-jobcard__heading {
+  display: flex;
+  background: var(--color_key);
+  padding: 8px 12px;
+  align-items: center;
+}
+.c-jobcard__heading-area {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: normal;
+  background: #fff;
+  padding: 5px 12px;
+  border-radius: 100px;
+}
+.c-jobcard__heading-name {
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 12px;
+}
+.c-jobcard__title {
+  font-weight: bold;
+  line-height: 21px !important;
+  margin-bottom: 8px;
+}
+.c-jobcard__more {
+  display: block;
+  font-size: 15px;
+  text-align: right;
+  color: var(--color_link);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .p-tempMenu {
   padding: 80px 0 0 224px;
 }
@@ -230,9 +276,6 @@
   padding: 0 24px 24px 24px;
 }
 
-.p-tempWorks {
-  padding: 100px 0 35px 0;
-}
 .p-tempWorks__con {
   display: flex;
   flex-direction: column;
@@ -261,7 +304,6 @@
 }
 
 .p-tempPR {
-  padding: 100px 0 35px 0;
   background: var(--color_bg);
   counter-reset: number 0;
 }
