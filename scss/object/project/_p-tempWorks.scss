@@ -1,6 +1,8 @@
 @use "../../import" as var;
 
 .p-tempWorks {
+padding:100px 0 35px 0;
+
   &__con {
     display: flex;
     flex-direction: column;

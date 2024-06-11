@@ -134,6 +134,18 @@
   line-height: 1.6;
 }
 
+.c-taglist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.c-taglist li {
+  font-size: 13px;
+  padding: 3px 10px;
+  border: 1px solid #333;
+  border-radius: 100px;
+}
+
 .p-tempMenu {
   padding: 80px 0 0 224px;
 }
@@ -167,6 +179,7 @@
 .p-temp2column {
   border: 1px solid var(--color_gray_2);
   padding: 15px;
+  background: #fff;
 }
 .p-temp2column__title-good, .p-temp2column__title-bulb {
   font-size: clamp(15px, 2.5vw, 19px);
@@ -203,7 +216,7 @@
   background-image: url(/img/icon_bulb.svg);
 }
 .p-temp2column__box {
-  padding: 15px 0;
+  padding: 15px 0 0;
 }
 
 .p-tempAbout__img {
@@ -217,6 +230,9 @@
   padding: 0 24px 24px 24px;
 }
 
+.p-tempWorks {
+  padding: 100px 0 35px 0;
+}
 .p-tempWorks__con {
   display: flex;
   flex-direction: column;
@@ -242,6 +258,53 @@
     width: 100%;
     height: auto;
   }
+}
+
+.p-tempPR {
+  padding: 100px 0 35px 0;
+  background: var(--color_bg);
+  counter-reset: number 0;
+}
+.p-tempPR__box {
+  margin: 0 0 35px 0;
+}
+.p-tempPR__title {
+  position: relative;
+  font-size: clamp(15px, 2.5vw, 19px);
+  font-weight: bold;
+  padding-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.p-tempPR__title::before {
+  content: "POINT";
+  padding: 12px;
+  color: #fff;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  width: 65px;
+  height: 65px;
+  border-radius: 100%;
+  background: var(--color_key);
+  background-size: 100%;
+}
+.p-tempPR__title::after {
+  position: absolute;
+  content: "" counter(number);
+  counter-increment: number 1;
+  color: #fff;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  width: 65px;
+  height: 65px;
+  left: 0;
+  bottom: -15px;
+}
+.p-tempPR__text {
+  padding: 10px 15px;
 }
 
 .u-color--key {

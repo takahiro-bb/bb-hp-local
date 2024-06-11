@@ -1,0 +1,54 @@
+@use "../../import" as var;
+
+.p-tempPR {
+  padding:100px 0 35px 0;
+  background: var(--color_bg);
+  counter-reset: number 0;
+
+  &__box {
+    margin: 0 0 35px 0;
+  }
+
+  &__title {
+    position: relative;
+    font-size: var.fs(15, 19);
+    font-weight: bold;
+    padding-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &::before {
+      content: "POINT";
+      padding: 12px;
+      color: #fff;
+      font-size: 12px;
+      display: flex;
+      justify-content: center;
+      // align-items: center;
+      width: 65px;
+      height: 65px;
+      border-radius: 100%;
+      background: var(--color_key);
+      background-size: 100%;
+    }
+
+    &::after {
+      position: absolute;
+      content: "" counter(number);
+      counter-increment: number 1;
+      color: #fff;
+      font-size: 25px;
+      display: flex;
+      justify-content: center;
+      width: 65px;
+      height: 65px;
+      left: 0;
+      bottom: -15px;
+    }
+  }
+
+  &__text {
+    padding: 10px 15px;
+  }
+}
