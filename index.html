@@ -48,12 +48,24 @@
         </div>
       </div> <!-- 企業案内パーツ 終わり-->
 
-      <div class="c-btn__box">
-        <a class="c-btn">
-          <span class="c-btn--star">★</span>お気に入り
+      <!-- ボタンパーツ　2個タイプ（お気に入り、募集中の求人） -->
+      <div class="c-btnBox">
+        <a class="c-btn c-btnBox__2 c-btn__fav">
+          お気に入り
         </a>
-        <a class="c-btn" href="#">募集中の求人</a>
+        <a class="c-btn c-btnBox__2" href="#">募集中の求人</a>
       </div>
+      <!-- ボタンパーツ 終わり-->
+
+      <!-- ボタンパーツ　３個タイプ（お気に入り、募集中の求人） -->
+      <div class="c-btnBox">
+        <a class="c-btn c-btnBox__3 c-btn__keep">
+          キープ
+        </a>
+        <a class="c-btn c-btnBox__3 c-btn__form" href="#">応募フォーム</a>
+        <a class="c-btn c-btnBox__3 c-btn__tel" href="#">TEL応募</a>
+      </div>
+      <!-- ボタンパーツ 終わり-->
 
       <!-- 求人詳細パーツ -->
       <div class="p-tempJob">
@@ -640,6 +652,7 @@
     </div>
   </main>
 
+
   <!-- jQuery -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
   <!-- slickのJavaScript -->
@@ -649,6 +662,26 @@
     $('.js-member-slider').slick({
       dots: true,
     });
+  </script>
+
+<!-- ボタンのJavaScript -->
+  <script>
+    $('.c-btn__fav').on('click', function () {
+      if ($(this).text() === 'お気に入り済') {
+        $(this).text('お気に入り').removeClass('js-clip');
+      } else {
+        $(this).text('お気に入り済').addClass('js-clip');
+      }
+    });
+
+    $('.c-btn__keep').on('click', function () {
+      if ($(this).text() === 'キープ済') {
+        $(this).text('キープ').removeClass('js-clip');
+      } else {
+        $(this).text('キープ済').addClass('js-clip');
+      }
+    });
+
   </script>
 </body>
 

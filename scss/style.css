@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap';
 @import 'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap';
 :root {
@@ -242,6 +243,59 @@
   text-decoration: underline;
   cursor: pointer;
 }
+
+.c-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color_gray_1);
+  color: #fff;
+  padding: 10px 0;
+  border-radius: 100px;
+  cursor: pointer;
+}
+.c-btn__fav::before {
+  content: "★";
+  color: #fff;
+  margin-right: 5px;
+}
+.c-btn__fav.js-clip::before {
+  color: var(--color_gray_2);
+}
+.c-btn__keep::before {
+  content: "★";
+  color: #fff;
+  margin-right: 5px;
+}
+.c-btn__keep.js-clip::before {
+  color: var(--color_gray_2);
+}
+.c-btn__form::before {
+  content: "";
+  background-image: url("../img/icon_form.svg");
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+.c-btn__tel::before {
+  content: "";
+  background-image: url("../img/icon_tel.svg");
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.c-btnBox {
+  display: flex;
+  justify-content: space-evenly;
+  background: var(--color_main);
+  padding: 17px 0;
+}
+.c-btnBox__2 {
+  width: 40%;
+}
+.c-btnBox__3 {
+  width: 30%;
 
 .p-flow__box {
   position: relative;
