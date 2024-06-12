@@ -1,0 +1,10 @@
+@use "../../import" as var;
+
+.c-fadeScroll {
+  opacity: 0;
+  transition: opacity 0.8s;
+
+  &.visible {
+    opacity: 1;
+  }
+}

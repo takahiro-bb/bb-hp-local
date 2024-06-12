@@ -1,9 +1,0 @@
-@use "../../import" as var;
-
-.c-fadeTrigger {
-  display: none;
-
-  &.visible {
-    display: block;
-  }
-}
