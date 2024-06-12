@@ -7,4 +7,22 @@ body{
     @include var.mq(max, tb) {
         font-size: 14px;
     }
+
+    @include var.mq(max, sp) {
+        padding-top: 62px;
+
+        &:has(.c-hamburger__menu-toggle.active) {
+            overflow: hidden;
+        }
+    }
+}
+
+a {
+    transition: all 300ms ease-in-out;
+}
+
+@media (hover: hover) {
+    a:not(.p-tempMenu__nav-anchor):hover {
+        opacity: 0.6;
+    }
 }

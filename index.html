@@ -15,12 +15,38 @@
 </head>
 
 <body>
+  <header class="p-header">
+    <h1 class="p-header__logo">
+      <img src="./img/header_logo.png" alt="BB GARDEN CAFE PRODUCT">
+    </h1>
+
+    <!-- ハンバーガーメニュー -->
+    <div class="c-hamburger__menu-toggle">
+      <div class="c-hamburger__bar"></div>
+    </div>
+
+    <div class="c-hamburger__nav">
+      <ul class="p-tempMenu__nav">
+        <li><a class="p-tempMenu__nav-anchor" href="#">TOP</a></li>
+        <li><a class="p-tempMenu__nav-anchor" href="#">仕事紹介</a></li>
+        <li><a class="p-tempMenu__nav-anchor" href="#">アピールポイント</a></li>
+        <li><a class="p-tempMenu__nav-anchor" href="#">職場の雰囲気</a></li>
+        <li><a class="p-tempMenu__nav-anchor" href="#">メンバー</a></li>
+        <li><a class="p-tempMenu__nav-anchor" href="#">働きやすさ</a></li>
+        <li><a class="p-tempMenu__nav-anchor" href="#">募集事項</a></li>
+        <li><a class="p-tempMenu__nav-anchor" href="#">採用までの流れ(応募方法)</a></li>
+        <li><a class="p-tempMenu__nav-anchor" href="#">会社概要</a></li>
+      </ul>
+    </div>
+    <div class="c-hamburger__overlay"></div>
+
+  </header>
   <main class="l-tempMain">
     <div class="l-tempMain__con--l">
       <div class="p-tempMenu l-tempMain__wrap">
-        <div class="p-tempMenu__logo">
-          <img src="img/header_logo.png" class="p-tempMenu__logo-img">
-        </div>
+        <h1 class="p-tempMenu__logo">
+          <img src="img/header_logo.png" class="p-tempMenu__logo-img" alt="BB GARDENS CAFE product">
+        </h1>
         <ul class="p-tempMenu__nav">
           <li><a class="p-tempMenu__nav-anchor" href="#">TOP</a></li>
           <li><a class="p-tempMenu__nav-anchor" href="#">仕事紹介</a></li>
@@ -220,7 +246,7 @@
       </section>
 
       <!-- アピールポイントパーツ -->
-      <section class="p-tempPR c-section">
+      <section class="p-tempPR c-section u-bg-color--gray">
         <section class="c-section__heading-box">
           <h2 class="c-section__heading">アピールポイント</h2>
           <p class="c-section__heading--en">POINT</p>
@@ -279,22 +305,22 @@
       <div class="c-section">
         <ul class="p-photoList">
           <li class="p-photoList__item">
-            <img class="p-photoList__image" src="https://picsum.photos/id/3/300">
+            <img class="p-photoList__image" src="https://picsum.photos/id/3/600">
           </li>
           <li class="p-photoList__item">
-            <img class="p-photoList__image" src="https://picsum.photos/id/7/300">
+            <img class="p-photoList__image" src="https://picsum.photos/id/7/600">
           </li>
           <li class="p-photoList__item">
-            <img class="p-photoList__image" src="https://picsum.photos/id/11/300">
+            <img class="p-photoList__image" src="https://picsum.photos/id/11/600">
           </li>
           <li class="p-photoList__item">
-            <img class="p-photoList__image" src="https://picsum.photos/id/13/300">
+            <img class="p-photoList__image" src="https://picsum.photos/id/13/600">
           </li>
           <li class="p-photoList__item">
-            <img class="p-photoList__image" src="https://picsum.photos/id/17/300">
+            <img class="p-photoList__image" src="https://picsum.photos/id/17/600">
           </li>
           <li class="p-photoList__item">
-            <img class="p-photoList__image" src="https://picsum.photos/id/19/300">
+            <img class="p-photoList__image" src="https://picsum.photos/id/19/600">
           </li>
         </ul>
       </div>
@@ -327,7 +353,7 @@
         <div class="p-memberSlider js-member-slider">
           <div class="p-memberSlider__item">
             <div class="p-memberSlider__thumb">
-              <img src="https://picsum.photos/id/23/300">
+              <img src="https://picsum.photos/id/23/600">
             </div>
             <h3 class="c-heading-fs--17-bold u-ta--center">田中太郎</h3>
             <p class="u-mb--16 u-fs--13 u-ta--center">店長・ホール担当</p>
@@ -359,11 +385,11 @@
 
           <div class="p-memberSlider__item">
             <div class="p-memberSlider__thumb">
-              <img src="https://picsum.photos/id/29/300">
+              <img src="https://picsum.photos/id/29/600">
             </div>
             <h3 class="c-heading-fs--17-bold u-ta--center">山田次郎</h3>
             <p class="u-mb--16 u-fs--13 u-ta--center">キッチン担当</p>
-            <div class="u-px--40">
+            <div class="u-px--sp-0 u-px--40">
               <p class="c-section__read">
                 実家が旅館を経営しており、幼い頃から厨房ではたらく人の姿を見ていました。食事を提供する仕事をしたいと思い、いまカフェの店長をやっています。趣味はスポーツ観戦です。
               </p>
@@ -394,7 +420,7 @@
       <!-- / メンバー -->
 
       <!-- 働きやすさ -->
-      <div class="u-px--56">
+      <div class="u-px--sp-16 u-px--56">
         <section class="c-section__heading-box">
           <h2 class="c-section__heading">働きやすさ</h2>
           <p class="c-section__heading--en">easy to work</p>
@@ -491,77 +517,78 @@
             社会保険、制服・安全靴貸与、通勤交通費、資格取得支援制度、外部セミナー受講補助、長期休暇（ＧＷ、夏季休暇、年末年始休暇）、年次有給休暇（年間80％以上の取得を推進）、特別休暇制度（結婚休暇、弔意休暇、出産休暇、新人休暇など）
           </dd>
         </dl>
-        <!-- / 募集要項 -->
+      </div>
+      <!-- / 募集要項 -->
 
-        <!-- 採用までの流れ（応募方法） -->
-        <div class="c-section u-bg-color--gray">
-          <h3 class="c-heading-decoration">採用までの流れ（応募方法）</h3>
-          <div class="p-flow__box">
-            <h4 class="u-mb--16 u-fs--20 u-fw--600">
-              <span class="u-ff--en u-color--key">1.</span>応募
-            </h4>
-            <p class="c-section__read u-mb--24">
-              電話もしくは応募フォームよりご応募ください。<br>TEL.<a href="tal:0267657201">0267-65-7201</a>（担当：中澤）
-            </p>
-            <a class="c-btn" href="">応募フォーム</a>
-          </div>
-          <div class="p-flow__box">
-            <h4 class="u-fs--20 u-fw--600">
-              <span class="u-ff--en u-color--key">2.</span>書類選考
-            </h4>
-          </div>
-          <div class="p-flow__box">
-            <h4 class="u-fs--20 u-fw--600">
-              <span class="u-ff--en u-color--key">3.</span>面接
-            </h4>
-          </div>
-          <div class="p-flow__box">
-            <h4 class="u-mb--16 u-fs--20 u-fw--600">
-              <span class="u-ff--en u-color--key">4.</span>合否通知
-            </h4>
-            <p class="c-section__read">
-              ※ご応募から合否決定まで最短2週間
-            </p>
-          </div>
+      <!-- 採用までの流れ（応募方法） -->
+      <div class="c-section u-bg-color--gray">
+        <h3 class="c-heading-decoration">採用までの流れ（応募方法）</h3>
+        <div class="p-flow__box">
+          <h4 class="u-mb--16 u-fs--20 u-fw--600">
+            <span class="u-ff--en u-color--key">1.</span>応募
+          </h4>
+          <p class="c-section__read u-mb--24">
+            電話もしくは応募フォームよりご応募ください。<br>TEL.<a href="tal:0267657201">0267-65-7201</a>（担当：中澤）
+          </p>
+          <a class="c-btn" href="">応募フォーム</a>
         </div>
-        <!-- / 採用までの流れ（応募方法） -->
-
-        <!-- 会社概要（情報テーブルパーツ） -->
-        <div class="c-section u-bg-color--gray">
-          <h3 class="c-heading-decoration">会社概要</h3>
-          <dl class="c-infoList u-fs--15">
-            <dt>会社名</dt>
-            <dd>ビービーカフェ</dd>
-          </dl>
-          <dl class="c-infoList u-fs--15">
-            <dt>事業内容</dt>
-            <dd>事業内容が入ります</dd>
-          </dl>
-          <dl class="c-infoList u-fs--15">
-            <dt>住所</dt>
-            <dd>住所が入ります</dd>
-          </dl>
-          <dl class="c-infoList u-fs--15">
-            <dt>お問合せ</dt>
-            <dd>TEL：電話番号が入ります</dd>
-            <dd>Mail：メールアドレスが入ります</dd>
-          </dl>
-          <dl class="c-infoList u-fs--15">
-            <dt>代表者</dt>
-            <dd>代表者名が入ります</dd>
-          </dl>
-          <dl class="c-infoList u-fs--15">
-            <dt>従業員数</dt>
-            <dd>従業員数が入ります</dd>
-          </dl>
-          <dl class="c-infoList u-fs--15">
-            <dt>公式HP</dt>
-            <dd>HPのURLが入ります</dd>
-          </dl>
-          <!-- / 会社概要 -->
+        <div class="p-flow__box">
+          <h4 class="u-fs--20 u-fw--600">
+            <span class="u-ff--en u-color--key">2.</span>書類選考
+          </h4>
+        </div>
+        <div class="p-flow__box">
+          <h4 class="u-fs--20 u-fw--600">
+            <span class="u-ff--en u-color--key">3.</span>面接
+          </h4>
+        </div>
+        <div class="p-flow__box">
+          <h4 class="u-mb--16 u-fs--20 u-fw--600">
+            <span class="u-ff--en u-color--key">4.</span>合否通知
+          </h4>
+          <p class="c-section__read">
+            ※ご応募から合否決定まで最短2週間
+          </p>
         </div>
       </div>
+      <!-- / 採用までの流れ（応募方法） -->
 
+      <!-- 会社概要（情報テーブルパーツ） -->
+      <div class="c-section u-bg-color--gray">
+        <h3 class="c-heading-decoration">会社概要</h3>
+        <dl class="c-infoList u-fs--15">
+          <dt>会社名</dt>
+          <dd>ビービーカフェ</dd>
+        </dl>
+        <dl class="c-infoList u-fs--15">
+          <dt>事業内容</dt>
+          <dd>事業内容が入ります</dd>
+        </dl>
+        <dl class="c-infoList u-fs--15">
+          <dt>住所</dt>
+          <dd>住所が入ります</dd>
+        </dl>
+        <dl class="c-infoList u-fs--15">
+          <dt>お問合せ</dt>
+          <dd>TEL：電話番号が入ります</dd>
+          <dd>Mail：メールアドレスが入ります</dd>
+        </dl>
+        <dl class="c-infoList u-fs--15">
+          <dt>代表者</dt>
+          <dd>代表者名が入ります</dd>
+        </dl>
+        <dl class="c-infoList u-fs--15">
+          <dt>従業員数</dt>
+          <dd>従業員数が入ります</dd>
+        </dl>
+        <dl class="c-infoList u-fs--15">
+          <dt>公式HP</dt>
+          <dd>HPのURLが入ります</dd>
+        </dl>
+        <!-- / 会社概要 -->
+      </div>
+
+      <!-- 募集中の求人 -->
       <section class="c-section p-joblink">
         <section class="c-section__heading-box">
           <h2 class="c-section__heading">募集中の求人</h2>
@@ -620,6 +647,44 @@
           </li>
         </ul>
       </section>
+      <!-- / 募集中の求人 -->
+
+      <!-- アクセス -->
+      <div class="c-section c-map">
+        <iframe class="c-map__iframe"
+          src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d51375.32035948553!2d138.592615!3d36.410223!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzbCsDI0JzM2LjgiTiAxMzjCsDM1JzMzLjQiRQ!5e0!3m2!1sja!2sus!4v1718152548468!5m2!1sja!2sus"
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <div class="c-map__link-box">
+          <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" fill="none" viewBox="0 0 24 24">
+            <path fill-rule="evenodd"
+              d="M21.75 5.035v13.548l-6.637 1.693-2.918-.798-3.185-.708-6.76 1.69V6.915L8.99 5.23l3.565.793 2.57.702 6.625-1.69Zm-7.38 3.038-2.175-.595-2.445-.543v10.463l2.805.624 1.814.495V8.073Zm1.5 10.462 4.38-1.118V6.965l-4.38 1.118v10.452Zm-7.62-1.12V6.96l-4.5 1.125v10.453l4.5-1.125Z"
+              clip-rule="evenodd" />
+          </svg>
+
+          <a class="c-map__link c-section__read"
+            href="https://www.google.co.jp/maps/place/36%C2%B024'36.8%22N+138%C2%B035'33.4%22E/@36.410223,138.5900401,17z/data=!3m1!4b1!4m4!3m3!8m2!3d36.410223!4d138.592615?hl=ja&entry=ttu"
+            target="_blank">大きな地図を見る</a>
+        </div>
+        <div class="c-map--access">
+          <dl class="c-map--access-info c-section__read">
+            <dt>【駅】</dt>
+            <dd>JR小諸駅 2.6km(車約7分)</dd>
+          </dl>
+          <dl class="c-map--access-info c-section__read">
+            <dt>【車】</dt>
+            <dd>上信越自動車道小諸IC 1km(約1分)</dd>
+          </dl>
+        </div>
+      </div>
+      <!-- / アクセス -->
+
+      <!-- copyright -->
+      <div class="c-copyright">
+        <small>Copyright(c) 2024 店舗名 Inc.All Rights Reserved.</small>
+      </div>
+      <!-- / copyright -->
+    </div>
     </div>
     <!-- メインコンテンツ　終わり--> <!-- /l-tempMain__con--m -->
 
@@ -660,6 +725,28 @@
   <!-- slickのJavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
+  <!-- ハンバーガーメニュー -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggle = document.querySelector('.c-hamburger__menu-toggle');
+      const nav = document.querySelector('.c-hamburger__nav');
+      const overlay = document.querySelector('.c-hamburger__overlay');
+
+      toggle.addEventListener('click', function () {
+        this.classList.toggle('active');
+        nav.style.top = this.classList.contains('active') ? '61px' : '61px';
+        overlay.style.opacity = this.classList.contains('active') ? '1' : '0';
+      });
+
+      overlay.addEventListener('click', function () {
+        toggle.classList.remove('active');
+        nav.style.top = '-100%';
+        this.style.display = 'none';
+      });
+    });
+  </script>
+
+  <!-- メンバーのスライダー表示 -->
   <script>
     $('.js-member-slider').slick({
       dots: true,

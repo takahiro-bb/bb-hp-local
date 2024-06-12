@@ -1,0 +1,39 @@
+@use "../../import" as var;
+
+.c-map {
+  &__iframe {
+    width: 100%;
+    aspect-ratio: 3/4;
+  }
+
+  &__link {
+    text-decoration: underline;
+
+    &-box {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 4px;
+      margin: 4px 0 16px 0;
+
+      svg {
+        width: 24px;
+        height: 24px;
+        
+        path {
+          fill: var(--color_key);
+        }
+      }
+    }
+  }
+
+  &--access {
+    &-info {
+      margin-bottom: 16px;
+
+      &+& {
+        margin-bottom: 32px;
+      }
+    }
+  }
+}
