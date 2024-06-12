@@ -49,16 +49,16 @@
       </div> <!-- 企業案内パーツ 終わり-->
 
       <!-- ボタンパーツ　2個タイプ（お気に入り、募集中の求人） -->
-      <div class="c-btnBox">
+      <div class="c-btnBox" id="js-btnTrigger-2btn">
         <a class="c-btn c-btnBox__2 c-btn__fav">
           お気に入り
         </a>
-        <a class="c-btn c-btnBox__2" href="#">募集中の求人</a>
+        <a class="c-btn c-btnBox__2 c-btn__rec" href="#">募集中の求人</a>
       </div>
       <!-- ボタンパーツ 終わり-->
 
-      <!-- ボタンパーツ　３個タイプ（お気に入り、募集中の求人） -->
-      <div class="c-btnBox">
+      <!-- ボタンパーツ　３個タイプ（キープ、応募フォーム、TEL応募） -->
+      <div class="c-btnBox" id="js-btnTrigger-3btn">
         <a class="c-btn c-btnBox__3 c-btn__keep">
           キープ
         </a>
@@ -99,28 +99,6 @@
 
         </div>
       </div> <!-- 求人詳細パーツ 終わり-->
-
-      <!-- 募集中の求人ボタン、お気に入りボタン　パーツ-->
-      <div class="p-tempBtn__box p-tempBtn__boshu">
-        <a href="c-tempBtn">
-          募集中の求人
-        </a>
-
-        <a href="c-tempBtn">
-          お気に入り
-        </a>
-      </div>
-
-      <!-- 応募するボタン、お気に入りボタン　パーツ-->
-      <div class="p-tempBtn__box p-tempBtn__obo">
-        <a href="c-tempBtn">
-          応募する
-        </a>
-
-        <a href="c-tempBtn">
-          お気に入り
-        </a>
-      </div>
 
       <!-- 仕事紹介パーツ -->
       <section class="p-tempWorks c-section">
@@ -646,8 +624,32 @@
     <!-- メインコンテンツ　終わり--> <!-- /l-tempMain__con--m -->
 
     <div class="l-tempMain__con--r">
+
       <div class="l-tempMain__bg l-tempMain__wrap">
-        <img src="/img/bg.png">
+
+        <!--追従ボタンパーツ　（お気に入り、募集中の求人）　-->
+        <section id="js-hidden-2btn" class="c-fadeScroll">
+          <div class="c-btnBox__scroll">
+            <a class="c-btn c-btnBox__scroll-btn c-btn__fav">
+              お気に入り
+            </a>
+            <a class="c-btn c-btnBox__scroll-btn c-btn__rec" href="#">募集中の求人</a>
+          </div>
+        </section>
+
+        <!--追従ボタンパーツ　キープ、応募フォーム、TEL応募）-->
+        <section id="js-hidden-3btn" class="c-fadeScroll">
+        <div class="c-btnBox__scroll">
+          <a class="c-btn c-btnBox__scroll-btn c-btn__keep">
+            キープ
+          </a>
+          <a class="c-btn c-btnBox__scroll-btn c-btn__form" href="#">応募フォーム</a>
+          <a class="c-btn c-btnBox__scroll-btn c-btn__tel" href="#">TEL応募</a>
+        </div></section>
+        <!-- 追従ボタン　ここまで -->
+
+        <img src="../img/bg.png" alt="背景画像">
+
       </div>
     </div>
   </main>
@@ -664,7 +666,7 @@
     });
   </script>
 
-<!-- ボタンのJavaScript -->
+  <!-- ボタンのJavaScript -->
   <script>
     $('.c-btn__fav').on('click', function () {
       if ($(this).text() === 'お気に入り済') {
@@ -681,8 +683,37 @@
         $(this).text('キープ済').addClass('js-clip');
       }
     });
-
   </script>
+
+  <!-- 追従ボタンのJavaScript -->
+  <script>
+    window.addEventListener('scroll', function () {
+      const triggerElement = document.getElementById('js-btnTrigger-2btn');
+      const hiddenElement = document.getElementById('js-hidden-2btn');
+      const rect = triggerElement.getBoundingClientRect();
+      const isOutOfView = rect.top < 0 || rect.bottom > window.innerHeight;
+
+      if (isOutOfView) {
+        hiddenElement.classList.add('visible');
+      } else {
+        hiddenElement.classList.remove('visible');
+      }
+    });
+    
+    window.addEventListener('scroll', function () {
+      const triggerElement = document.getElementById('js-btnTrigger-3btn');
+      const hiddenElement = document.getElementById('js-hidden-3btn');
+      const rect = triggerElement.getBoundingClientRect();
+      const isOutOfView = rect.top < 0 || rect.bottom > window.innerHeight;
+
+      if (isOutOfView) {
+        hiddenElement.classList.add('visible');
+      } else {
+        hiddenElement.classList.remove('visible');
+      }
+    });
+  </script>
+
 </body>
 
 </html>
