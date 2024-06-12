@@ -1,0 +1,39 @@
+@use "../../import" as var;
+
+.c-animation {
+  &__fadeIn {
+    animation-name: fadeInAnime;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+
+  &__fadeOut{
+    animation-name: fadeOutAnime;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInAnime {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOutAnime {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(100px);
+  }
+}

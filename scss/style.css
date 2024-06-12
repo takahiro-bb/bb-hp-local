@@ -270,6 +270,13 @@
 .c-btn__keep.js-clip::before {
   color: var(--color_gray_2);
 }
+.c-btn__rec::before {
+  content: "";
+  background-image: url("../img/icon_rec.svg");
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
 .c-btn__form::before {
   content: "";
   background-image: url("../img/icon_form.svg");
@@ -296,7 +303,65 @@
 }
 .c-btnBox__3 {
   width: 30%;
+}
+.c-btnBox__scroll {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  bottom: 65px;
+  gap: 18px;
+}
+.c-btnBox__scroll-btn {
+  justify-content: flex-start;
+  width: 180px;
+  border-radius: 0 100px 100px 0;
+  padding-left: 20px;
+}
 
+.c-fadeTrigger {
+  display: none;
+}
+.c-fadeTrigger.visible {
+  display: block;
+}
+.c-fadeTrigger.hidden {
+  display: none;
+}
+
+.c-animation__fadeIn {
+  animation-name: fadeInAnime;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.c-animation__fadeOut {
+  animation-name: fadeOutAnime;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInAnime {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeOutAnime {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(100px);
+  }
+}
 .p-flow__box {
   position: relative;
   padding: 20px;

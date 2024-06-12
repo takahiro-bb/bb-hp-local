@@ -13,4 +13,20 @@
   &__3 {
     width: 30%;
   }
+
+  &__scroll {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    bottom: 65px;
+    gap:18px;
+
+    &-btn {
+      justify-content: flex-start;
+      width: 180px;
+      border-radius: 0 100px 100px 0;
+      padding-left: 20px;
+    }
+  }
 }
