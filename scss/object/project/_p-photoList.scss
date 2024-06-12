@@ -8,6 +8,10 @@
 
   &__item {
     width: calc(50% - 10px);
+
+    @include var.mq(max, sp) {
+      width: 100%;
+    }
   }
 
   &__image {

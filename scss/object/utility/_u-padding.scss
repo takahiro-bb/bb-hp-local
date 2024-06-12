@@ -9,5 +9,17 @@
     &56 {
       padding-inline: 56px;
     }
+
+    @include var.mq(max, sp) {
+      &sp-{
+        &0 {
+          padding-inline: 0;
+        }
+
+        &16 {
+          padding-inline: 16px;
+        }
+      }
+    }
   }
 }

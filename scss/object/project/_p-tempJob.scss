@@ -1,0 +1,9 @@
+@use "../../import" as var;
+
+.p-tempJob {
+  &__img {
+    img {
+      width: 100%;
+    }
+  }
+}
