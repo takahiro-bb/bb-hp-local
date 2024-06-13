@@ -2,16 +2,40 @@
 
 .c-btnBox {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 16px;
   background: var(--color_main);
-  padding: 17px 0;
+  padding: 16px 24px;
 
-  &__2 {
-    width: 40%;
+  &:not([id*="js-btnTrigger"]) {
+    display: none;
   }
 
-  &__3 {
-    width: 30%;
+  @include var.mq(max, tb) {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    gap: 0;
+    width: 100%;
+    padding: 0;
+
+    &[id*="js-btnTrigger"] {
+      display: none;;
+    }
+
+    &:not([id*="js-btnTrigger"]) {
+      display: flex;
+    }  
+  }
+
+  .c-btn {
+    flex: 1;
+
+    @include var.mq(max, tb) {
+      & + .c-btn {
+        border-left: 1px solid #fff;
+      }
+    }
   }
 
   &__scroll {
