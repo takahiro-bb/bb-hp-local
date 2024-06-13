@@ -10,6 +10,14 @@
       margin-bottom: 16px;
     }
 
+    &16_24 {
+      margin-bottom: 24px;
+
+      @include var.mq(max, sp) {
+        margin-bottom: 16px;
+      }
+    }
+
     &18 {
       margin-bottom: 18px;
     }
