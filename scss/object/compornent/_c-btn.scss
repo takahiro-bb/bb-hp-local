@@ -1,17 +1,21 @@
-@use "../../import" as var;
+ @use "../../import" as var;
 
 .c-btn {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: var.fs(12, 16);
   background: var(--color_gray_1);
   color: #fff;
-  padding: 10px 0;
+  padding-block: 12.5px;
   border-radius: 100px;
   cursor: pointer;
 
-  &:hover{
-    
+  @include var.mq(max, tb) {
+    flex-direction: column;
+    gap: 6px;
+    background: var(--color_main);
+    border-radius: 0;
   }
 
   &__fav {
@@ -23,6 +27,10 @@
 
     &.js-clip::before {
       color: var(--color_gray_2);
+
+      @include var.mq(max, tb) {
+        color: rgba(255, 255, 255, 0.6);
+      }
     }
   }
 
@@ -35,6 +43,10 @@
 
     &.js-clip::before {
       color: var(--color_gray_2);
+
+      @include var.mq(max, tb) {
+        color: rgba(255, 255, 255, 0.6);
+      }
     }
   }
 
@@ -66,5 +78,15 @@
       height: 16px;
       margin-right: 8px;
     }
+  }
+
+  &__contact-form {
+    max-width: 216px;
+    height: 48px;
+    margin-inline: auto;
+    font-size: 19px;
+    font-weight: 700;
+    background-color: var(--color_key);
+    border-radius: 100px;;
   }
 }
