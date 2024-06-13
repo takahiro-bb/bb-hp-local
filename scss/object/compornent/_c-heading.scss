@@ -46,6 +46,8 @@
     align-items: center;
     gap: 10px;
     margin-bottom: 8px;
+    font-size: var.fs(16, 19);
+    font-weight: 700;
 
     &::before {
       display: block;
