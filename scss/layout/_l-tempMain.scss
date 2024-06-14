@@ -58,6 +58,16 @@
       width: calc((100vw - 570px) / 2);
       overflow-y: auto;
 
+      &::-webkit-scrollbar {
+        background-color: var(--color_main);
+        border-left: 2px solid rgba(255, 255, 255, 0.5);
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: rgba(255, 255, 255, 0.3);
+        border-left: 2px solid rgba(255, 255, 255, 0.5);
+      }
+
       @media  screen and (min-width: 767px) and (max-width: 1024px) {
         width: 100%;
       }
