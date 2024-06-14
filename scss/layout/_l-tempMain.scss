@@ -57,6 +57,10 @@
     &:has(.p-tempMenu__logo) {
       width: calc((100vw - 570px) / 2);
       overflow-y: auto;
+
+      @media  screen and (min-width: 767px) and (max-width: 1024px) {
+        width: 100%;
+      }
     }
 
   }
