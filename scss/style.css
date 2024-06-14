@@ -75,6 +75,14 @@
   width: calc((100vw - 570px) / 2);
   overflow-y: auto;
 }
+.l-tempMain__wrap:has(.p-tempMenu__logo)::-webkit-scrollbar {
+  background-color: var(--color_main);
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+}
+.l-tempMain__wrap:has(.p-tempMenu__logo)::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+}
 @media screen and (min-width: 767px) and (max-width: 1024px) {
   .l-tempMain__wrap:has(.p-tempMenu__logo) {
     width: 100%;
@@ -1155,6 +1163,9 @@ a {
   }
   .c-btn:hover::before {
     opacity: 0.6;
+  }
+  .c-btn__contact-form:hover {
+    color: rgba(255, 255, 255, 0.6);
   }
 }
 .u-font__title {
