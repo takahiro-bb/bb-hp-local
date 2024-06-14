@@ -45,4 +45,8 @@
     font-size: var.fs(14, 15);
     line-height: 1.6;
   }
+
+  &--space {
+    margin-bottom: var(--contents-space);
+  }
 }
