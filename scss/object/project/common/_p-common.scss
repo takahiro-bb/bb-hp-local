@@ -33,4 +33,13 @@ a {
     a:not(.p-tempMenu__nav-anchor):hover {
         opacity: 0.6;
     }
+
+    .c-btn:hover {
+        color: #c2c2c2;
+        opacity: 1 !important;
+
+        &::before {
+            opacity: 0.6;
+        }
+    }
 }
