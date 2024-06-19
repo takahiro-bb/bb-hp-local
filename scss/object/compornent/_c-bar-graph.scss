@@ -1,0 +1,41 @@
+@use "../../import" as var;
+.c-bar-graph {
+  &__wrap {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    &+& {
+      margin-top: 10px;
+    }
+
+    &-heading {
+      width: 100%;
+      max-width: 64px;
+    }
+  }
+
+  &__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 22px;
+
+    &.is-first {
+      background-color: var(--graph-color-first);
+    }
+
+    &.is-second {
+      background-color: var(--graph-color-second);
+    }
+
+    &.is-third {
+      background-color: var(--graph-color-third);
+    }
+  }
+}
