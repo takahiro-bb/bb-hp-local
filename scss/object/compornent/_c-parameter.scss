@@ -9,6 +9,10 @@
   padding-inline: 88px;
   margin-bottom: 40px;
 
+  @include var.mq(max, tb) {
+    padding-inline: 20px;
+  }
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
