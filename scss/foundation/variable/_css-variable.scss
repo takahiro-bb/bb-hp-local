@@ -14,4 +14,26 @@
   // フォント設定
   --ff-base: "Noto Sans JP", sans-serif;
   --ff-en: "Poppins", sans-serif;
+
+  // コンテンツ余白
+  --contents-space: 80px;
+
+  // グラフ関係
+  --r: 24.5px;
+  --graph-color1: #cefa88;
+  --graph-color2: #bfea7c;
+  --graph-color3: #9bcf53;
+  --graph-color4: #548b21;
+
+  // 円グラフ用
+  --graph-a-value: 25%;
+  --graph-b-value: 50%;
+  --graph-o-value: 75%;
+  --graph-ab-value: 100%;
+
+  // 棒グラフ用
+  --graph-color-first: #548b21;
+  --graph-color-second: #9bcf53;
+  --graph-color-third: #bfea7c;
+
 }

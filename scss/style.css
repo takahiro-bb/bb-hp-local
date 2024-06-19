@@ -14,6 +14,19 @@
   --color_border_2: #ababab;
   --ff-base: "Noto Sans JP", sans-serif;
   --ff-en: "Poppins", sans-serif;
+  --contents-space: 80px;
+  --r: 24.5px;
+  --graph-color1: #cefa88;
+  --graph-color2: #bfea7c;
+  --graph-color3: #9bcf53;
+  --graph-color4: #548b21;
+  --graph-a-value: 25%;
+  --graph-b-value: 50%;
+  --graph-o-value: 75%;
+  --graph-ab-value: 100%;
+  --graph-color-first: #548b21;
+  --graph-color-second: #9bcf53;
+  --graph-color-third: #bfea7c;
 }
 
 .l-tempMain {
@@ -112,6 +125,38 @@
   border-left-width: 10px;
   border-right-width: 10px;
   border-bottom-color: var(--color_balloon);
+}
+
+.c-bar-graph__wrap {
+  position: relative;
+  overflow: hidden;
+}
+.c-bar-graph__item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.c-bar-graph__item + .c-bar-graph__item {
+  margin-top: 10px;
+}
+.c-bar-graph__item-heading {
+  width: 100%;
+  max-width: 64px;
+}
+.c-bar-graph__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 22px;
+}
+.c-bar-graph__bar.is-first {
+  background-color: var(--graph-color-first);
+}
+.c-bar-graph__bar.is-second {
+  background-color: var(--graph-color-second);
+}
+.c-bar-graph__bar.is-third {
+  background-color: var(--graph-color-third);
 }
 
 .c-btn {
@@ -242,6 +287,14 @@
   padding-left: 20px;
 }
 
+.c-chart {
+  position: relative;
+  width: calc(var(--r) * 4);
+  height: calc(var(--r) * 4);
+  border-radius: 50%;
+  background-image: conic-gradient(var(--graph-color1) 0% var(--graph-a-value), var(--graph-color2) var(--graph-a-value) var(--graph-b-value), var(--graph-color3) var(--graph-b-value) var(--graph-o-value), var(--graph-color4) var(--graph-o-value) var(--graph-ab-value));
+}
+
 .c-copyright {
   display: flex;
   align-items: center;
@@ -266,6 +319,41 @@
 }
 .c-fadeScroll.visible {
   opacity: 1;
+}
+
+.c-graph__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 24px;
+  padding-inline: 88px;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 1024px) {
+  .c-graph__wrapper {
+    padding-inline: 20px;
+  }
+}
+.c-graph__box {
+  width: 100%;
+  padding: 16px 24px;
+  background-color: var(--color_bg);
+}
+.c-graph__box.is-w50 {
+  width: calc(50% - 12px);
+}
+.c-graph__heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 32px;
+  margin-bottom: 18px;
+  background-color: #fff;
+}
+.c-graph__flex {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
 }
 
 .c-hamburger__menu-toggle {
@@ -487,7 +575,47 @@
   margin-bottom: 16px;
 }
 .c-map--access-info + .c-map--access-info {
-  margin-bottom: 32px;
+  margin-bottom: 0;
+}
+
+.c-parameter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  padding-inline: 88px;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 1024px) {
+  .c-parameter {
+    padding-inline: 20px;
+  }
+}
+.c-parameter__wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 21px;
+  width: 100%;
+}
+.c-parameter__wrapper > [class*=u-ta--] {
+  width: 25%;
+}
+.c-parameter__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 48.9%, var(--color_gray_2) 49%, var(--color_gray_2) 50%, rgba(255, 255, 255, 0) 50.1%, rgba(255, 255, 255, 0) 100%) no-repeat center center/100% 1px;
+}
+.c-parameter__item {
+  width: 8px;
+  height: 8px;
+  background-color: var(--color_gray_2);
+  border-radius: 100px;
+}
+.c-parameter__item.is-active {
+  background-color: var(--color_point);
 }
 
 .c-section {
@@ -527,6 +655,9 @@
 .c-section__read {
   font-size: clamp(14px, 2.333vw, 15px);
   line-height: 1.6;
+}
+.c-section--space {
+  margin-bottom: var(--contents-space);
 }
 
 .c-taglist {
@@ -985,12 +1116,14 @@
 }
 
 .u-bg-color--gray {
-  padding-top: 80px;
-  padding-bottom: 40px;
+  padding-top: var(--contents-space);
+  padding-bottom: calc(var(--contents-space) / 2);
+  margin-bottom: var(--contents-space);
   background-color: var(--color_bg);
 }
 .u-bg-color--gray + .u-bg-color--gray {
   padding-top: 0;
+  margin-top: calc(var(--contents-space) * -1);
 }
 
 .u-color--key {
@@ -1008,10 +1141,16 @@
 .u-fs--13_14 {
   font-size: clamp(13px, 2.167vw, 14px);
 }
+.u-fs--13_15 {
+  font-size: clamp(13px, 2.167vw, 15px);
+}
 .u-fs--14 {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.6;
+}
+.u-fs--14_15 {
+  font-size: clamp(14px, 2.333vw, 15px);
 }
 .u-fs--15 {
   font-size: 15px;

@@ -1,0 +1,9 @@
+@use "../../import" as var;
+
+.c-chart {
+  position: relative;
+  width: calc(var(--r) * 4);
+  height: calc(var(--r) * 4);
+  border-radius: 50%;
+  background-image: conic-gradient(var(--graph-color1) 0% var(--graph-a-value), var(--graph-color2) var(--graph-a-value) var(--graph-b-value), var(--graph-color3) var(--graph-b-value) var(--graph-o-value), var(--graph-color4) var(--graph-o-value) var(--graph-ab-value));
+}

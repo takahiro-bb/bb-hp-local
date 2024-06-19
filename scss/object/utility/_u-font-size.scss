@@ -10,10 +10,18 @@
     font-size: var.fs(13, 14);
   }
 
+  &--13_15 {
+    font-size: var.fs(13, 15);
+  }
+
   &--14 {
     font-size: 14px;
     font-weight: 500;
     line-height: 1.6;
+  }
+
+  &--14_15 {
+    font-size: var.fs(14, 15);
   }
 
   &--15 {

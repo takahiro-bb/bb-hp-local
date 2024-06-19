@@ -3,12 +3,14 @@
 .u-bg {
   &-color {
     &--gray {
-      padding-top: 80px;
-      padding-bottom: 40px;
+      padding-top: var(--contents-space);
+      padding-bottom: calc(var(--contents-space) / 2);
+      margin-bottom: var(--contents-space);
       background-color: var(--color_bg);
 
       & + & {
         padding-top: 0;
+        margin-top: calc(var(--contents-space) * -1);
       }
     }
   }
