@@ -335,7 +335,7 @@
 }
 .c-graph__box {
   width: 100%;
-  padding: 16px 24px;
+  padding: 16px;
   background-color: var(--color_bg);
 }
 .c-graph__box.is-w50 {
@@ -870,13 +870,13 @@
 
 .p-tempAbout__img {
   width: 100%;
-  margin-bottom: 16px;
   aspect-ratio: 55/38;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .p-tempAbout__title {
-  padding: 0 24px 24px 24px;
+  padding: 16px 16px 24px 16px;
+  background-color: var(--color_bg);
 }
 
 .p-tempJob__img img {
